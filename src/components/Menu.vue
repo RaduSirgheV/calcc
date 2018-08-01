@@ -1,12 +1,14 @@
 <template>
     <div class="menu">
-        <div class="logo">
-            <a href="#"><img src="../assets/logo.png" alt="logo"></a>
-        </div>
+            <a href="#" class="logo"><img src="../assets/logo.png" alt="logo"></a>
         <div class="nav">
             <a href="#">Interior</a>
             <a href="#">Exterior</a>
             <a href="#">Acoperis</a>
+            <div class="lang">
+                <a href="#">RU</a>
+                <a href="#">RO</a>
+            </div>
         </div>
     </div>
 </template>
@@ -44,32 +46,33 @@ export default {
 }
 /*=====================================*/
 .menu {
-    max-width: 100%;
+    max-width: 90%;
     min-width: 320px;
+    margin: 0 auto;
     padding: 10px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo {
     display: flex;
     justify-content: center;
     opacity: 0.9;
+    display: block;
+}
+.logo img{
+    max-width: 320px;
 }
 .logo:hover {
     opacity: 1;
 }
-.logo a {
-    display: block;
-    max-width: 300px;
-}
-.logo a img {
-    max-width: 100%;
-}
 .nav {
     display: flex;
-    justify-content: center;
     font-family: ConcertOne-Regular, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
 .nav a{
     display: block;
@@ -77,10 +80,7 @@ export default {
     margin-top: 5px;
 }
 .nav a:hover {
-    /* border-bottom: 2px solid #43434c; */
     opacity: 0.8;
 }
-a + a {
-    margin-left: 40px;
-}
+
 </style>

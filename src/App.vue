@@ -12,6 +12,6 @@ export default {
 
 <style>
 #app {
-  background: url(assets/fon.jpg) repeat;
+  background-color: rgb(214, 206, 206);
 }
 </style>
