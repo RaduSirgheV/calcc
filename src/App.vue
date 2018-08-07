@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <app-menu></app-menu>
+    <dash-cont></dash-cont>
+    <contacts></contacts>
   </div>
 </template>
 
@@ -11,7 +13,9 @@ export default {
 </script>
 
 <style>
-#app {
-  background-color: rgb(214, 206, 206);
+@import './assets/style.css';
+
+dash-cont{
+  background-color: silver;
 }
 </style>
